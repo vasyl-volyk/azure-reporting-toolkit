@@ -1,0 +1,37 @@
+trigger:
+- main
+
+schedules:
+- cron: "0 */6 * * *"
+  displayName: Every 2 hours run
+  branches:
+    include:
+    - main
+  always: true
+
+pool:
+  name: default
+
+variables:
+- group: blob-upload-auth
+
+jobs:
+- job: OrchestratorJob
+  timeoutInMinutes: 360
+  steps:
+  - checkout: self
+  - task: PowerShell@2
+    displayName: Run orchestrator script
+    inputs:
+      # pwsh: true
+      targetType: filePath
+      filePath: run_all.ps1
+    env:
+      PAT: $(MY_PAT)
+      PA_API_KEY: $(PA_API_SECRET)
+      AzureOpenAIKey: $(AzureAIKey)
+      WORKDAY_USER: $(WORKDAY_USER)
+      WORKDAY_PASS: $(WORKDAY_PASS)
+      Dcert_API_KEY: $(Digicert_API_KEY)
+      MerakiApiKey: $(Meraki_API_Key)
+      

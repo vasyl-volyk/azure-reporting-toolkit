@@ -1,0 +1,13 @@
+# Environment / secrets
+.env
+*.env
+scripts/config.local.json
+
+# Local script output
+*.csv
+Repository-Documentation.md
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp

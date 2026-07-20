@@ -1,0 +1,308 @@
+[
+  {
+    "name": "Azure DNS zones record list",
+    "script": "scripts/az_dns_zones_records.ps1",
+    "outputName": "az_dns_zones_records_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Networking"
+  },
+  {
+    "name": "Preparing Az group reviews report",
+    "script": "scripts/az_group_reviews.ps1",
+    "outputName": "az_group_reviews.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Identity"
+  },
+  {
+    "name": "Preparing M365 PSTN user list report",
+    "script": "scripts/M365_Teams_PSTN_users_list.ps1",
+    "outputName": "M365_Teams_PSTN_users_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "M365"
+  },
+  {
+    "name": "Preparing M365 License Assignment Matrix",
+    "script": "scripts/M365_License_Assignment_Matrix.ps1",
+    "outputName": "M365_License_Assignment_Matrix.csv",
+    "parameters": {
+    },
+    "targetFolder": "M365"
+  },
+  {
+    "name": "Preparing Employee Device Inventory report",
+    "script": "scripts/Analytics_EmployeeDeviceInventory.ps1",
+    "outputName": "Analytics_EmployeeDeviceInventory.csv",
+    "parameters": {
+    },
+    "targetFolder": "Analytics"
+  },
+  {
+    "name": "Preparing list of Meraki devices",
+    "script": "scripts/Meraki_get_device_list.ps1",
+    "outputName": "Meraki_get_device_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Meraki"
+  },
+  {
+    "name": "Preparing list of Digicert epirations for certs",
+    "script": "scripts/Digicert_report_cert_expirations.ps1",
+    "outputName": "Digicert_report_cert_DaysUntilExpiry.csv",
+    "parameters": {
+    },
+    "targetFolder": "Digicert"
+  },
+  {
+    "name": "Preparing list of Digicert domains",
+    "script": "scripts/Digicert_report_domains.ps1",
+    "outputName": "Digicert_report_domains.csv",
+    "parameters": {
+    },
+    "targetFolder": "Digicert"
+  },
+  {
+    "name": "Preparing list of Digicert orders",
+    "script": "scripts/Digicert_report_orders.ps1",
+    "outputName": "Digicert_report_orders.csv",
+    "parameters": {
+    },
+    "targetFolder": "Digicert"
+  },
+  {
+    "name": "Preparing list of Failed auth events on Panorama",
+    "script": "scripts/pa_get_list_failed_auth.ps1",
+    "outputName": "pa_get_list_failed_auth.csv",
+    "parameters": {
+    },
+    "targetFolder": "Paloalto"
+  },
+  {
+    "name": "Preparing list of Panorama connected devices",
+    "script": "scripts/pa_connected_device_info.ps1",
+    "outputName": "pa_connected_device_info.csv",
+    "parameters": {
+    },
+    "targetFolder": "Paloalto"
+  },
+  {
+    "name": "Azure Conditional Named Locations list",
+    "script": "scripts/az_conditional_named_locations.ps1",
+    "outputName": "az_conditional_named_locations.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Security"
+  },
+  {
+    "name": "Azure public IP list",
+    "script": "scripts/az_get_public_ip_list.ps1",
+    "outputName": "az_public_ip_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Networking"
+  },
+  {
+    "name": "Azure users chain managers list",
+    "script": "scripts/az_user_chain_managers_list.ps1",
+    "outputName": "az_user_chain_managers_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Identity"
+  },
+  {
+    "name": "Azure users' role list",
+    "script": "scripts/az_get_user_roles.ps1",
+    "outputName": "az_get_user_roles.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Identity"
+  },
+  {
+    "name": "Azure VNET info for specific management group",
+    "script": "scripts/az_get_vnet_info.ps1",
+    "outputName": "az_get_vnet_info_from_Mg_Internal.csv",
+    "parameters": {
+	"ManagementGroupId" : "Internal"
+    },
+    "targetFolder": "Azure/Networking"
+  },
+  {
+    "name": "Azure device list",
+    "script": "scripts/az_device_list.ps1",
+    "outputName": "az_device_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Identity"
+  },
+  {
+    "name": "Workday users list",
+    "script": "scripts/WorkDay_all_users.ps1",
+    "outputName": "WorkDay_all_users.csv",
+    "parameters": {
+    },
+    "targetFolder": "WorkDay"
+  },
+  {
+    "name": "AZ mg groups and subscriptions list",
+    "script": "scripts/az_management_group_structure.ps1",
+    "outputName": "az_management_group_structure.csv",
+    "parameters": {
+     "TargetMGroupId": "YOUR-MANAGEMENT-GROUP-ID"
+    },
+    "targetFolder": "Azure/Identity"
+  },
+  {
+    "name": "DevOps Repos list",
+    "script": "scripts/devops_repos_info.ps1",
+    "outputName": "devops_repos_info.csv",
+    "parameters": {
+      "Organization" : "YourOrg",
+      "AzureOpenAIEndpoint" : "https://your-openai-resource.openai.azure.com/",
+      "DeploymentName" : "gpt-4.1-nano"
+    },
+    "targetFolder": "DevOps"
+  },
+  {
+    "name": "DevOps items list",
+    "script": "scripts/devops_all_not_closed_items.ps1",
+    "outputName": "devops_all_not_closed_items.csv",
+    "parameters": {
+      "Organization" : "YourOrg",
+      "UserEmails": "user1@yourcompany.com,user2@yourcompany.com,user3@yourcompany.com"
+    },
+    "targetFolder": "DevOps"
+  },
+  {
+    "name": "ad_comp_info",
+    "script": "scripts/ad_comp_info.ps1",
+    "outputName": "AD_comp_info.csv",
+    "parameters": {
+      "TargetOU": "DC=yourcompany,DC=com"
+    },
+    "targetFolder": "AD"
+  },
+  {
+    "name": "AD users list",
+    "script": "scripts/ad_users_list.ps1",
+    "outputName": "ad_users_lists.csv",
+    "parameters": {
+      "TargetOU": "DC=yourcompany,DC=com"
+    },
+    "targetFolder": "AD"
+  },
+  {
+    "name": "Azure RG list + CostCenter tag",
+    "script": "scripts/az_resource_groups_cost_center_tag_list.ps1",
+    "outputName": "az_resource_groups_cost_center_tag_list.csv",
+    "parameters": {
+      "TargetMGroupID": "Internal"
+    },
+    "targetFolder": "Azure/Governance"
+  },
+  {
+    "name": "Paloalto rules",
+    "script": "scripts/pa_get_security_rules_list.ps1",
+    "outputName": "pa_security_rules_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Paloalto"
+  },
+  {
+    "name": "Paloalto config changes",
+    "script": "scripts/pa_log_of_configuration.ps1",
+    "outputName": "pa_log_config_changes.csv",
+    "parameters": {
+    },
+    "targetFolder": "Paloalto"
+  },
+  {
+    "name": "Azure Conditional policy list",
+    "script": "scripts/az_conditional_policy_list.ps1",
+    "outputName": "az_conditional_policy_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Security"
+  },
+  {
+    "name": "Azure Dynamic group list",
+    "script": "scripts/az_dynamic_group_list.ps1",
+    "outputName": "az_dynamic_groups_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Identity"
+  },
+  {
+    "name": "Azure user group list",
+    "script": "scripts/az_tenant_user_groups_list.ps1",
+    "outputName": "az_user_groups_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Identity"
+  },
+  {
+    "name": "Azure Defender Alerts report",
+    "script": "scripts/az_defender_alerts.ps1",
+    "outputName": "az_defender_alerts.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Security"
+  },
+  {
+    "name": "Azure AD group sync status",
+    "script": "scripts/az_ad_group_sync_status.ps1",
+    "outputName": "az_ad_group_sync_status.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Identity"
+  },
+  {
+    "name": "Azure subscription list",
+    "script": "scripts/az_get_all_subscriptions.ps1",
+    "outputName": "az_get_all_subscriptions.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Governance"
+  },
+  {
+    "name": "Azure applications list",
+    "script": "scripts/pa_get_app_updates.ps1",
+    "outputName": "pa_get_app_updates.csv",
+    "parameters": {
+    },
+    "targetFolder": "Paloalto"
+  },
+  {
+    "name": "Azure all applications list",
+    "script": "scripts/az_get_all_applications.ps1",
+    "outputName": "az_get_all_applications.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Identity"
+  },
+  {
+    "name": "Azure available VM sizes in all regions list",
+    "script": "scripts/az_get_vm_sizes_for_all_regions.ps1",
+    "outputName": "az_get_vm_sizes_for_all_regions.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Infrastructure"
+  },
+  {
+    "name": "All Azure groups list",
+    "script": "scripts/az_tenant_all_groups_list.ps1",
+    "outputName": "az_tenant_all_groups_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Identity"
+  },
+  {
+    "name": "Azure User list",
+    "script": "scripts/az_tenant_user_list.ps1",
+    "outputName": "az_user_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure/Identity"
+  }
+]

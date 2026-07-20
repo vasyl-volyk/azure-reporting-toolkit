@@ -1,0 +1,85 @@
+[
+  {
+    "name": "ad_comp_info",
+    "script": "scripts/ad_comp_info.ps1",
+    "outputName": "AD_comp_info_$(Date).csv",
+    "parameters": {
+      "TargetOU": "DC=yourcompany,DC=com"
+    },
+    "targetFolder": "AD"
+  },
+  {
+    "name": "AD users list",
+    "script": "scripts/ad_users_list.ps1",
+    "outputName": "ad_users_lists.csv",
+    "parameters": {
+      "TargetOU": "OU=Locations,DC=yourcompany,DC=com"
+    },
+    "targetFolder": "AD"
+  },
+  {
+    "name": "Azure RG list + CostCenter tag",
+    "script": "scripts/az_resource_groups_COST_CENTER_tag_list.ps1",
+    "outputName": "az_resource_groups_COST_CENTER_tag_list.csv",
+    "parameters": {
+      "TargetMGroupID": "Internal"
+    },
+    "targetFolder": "Azure"
+  },
+  {
+    "name": "Paloalto rules",
+    "script": "scripts/pa_get_security_rules_list.ps1",
+    "outputName": "pa_security_rules_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Paloalto"
+  },
+  {
+    "name": "Paloalto config changes",
+    "script": "scripts/pa_log_of_configuration.ps1",
+    "outputName": "pa_log_config_changes.csv",
+    "parameters": {
+    },
+    "targetFolder": "Paloalto"
+  },
+  {
+    "name": "Azure DNS zones record list",
+    "script": "scripts/az_dns_zones_records.ps1",
+    "outputName": "az_dns_zones_records_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure"
+  },
+  {
+    "name": "Azure Conditional policy list",
+    "script": "scripts/az_conditional_lolicy_list.ps1",
+    "outputName": "az_conditional_policy_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure"
+  },
+  {
+    "name": "Azure Dynamic group list",
+    "script": "scripts/az_dynamic_group_list.ps1",
+    "outputName": "az_dynamic_groups_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure"
+  },
+  {
+    "name": "Azure user group list",
+    "script": "scripts/az_tenant_user_groups_list.ps1",
+    "outputName": "az_user_groups_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure"
+  },
+  {
+    "name": "Azure User list",
+    "script": "scripts/az_tenant_user_list.ps1",
+    "outputName": "az_user_list.csv",
+    "parameters": {
+    },
+    "targetFolder": "Azure"
+  }
+]
